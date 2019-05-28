@@ -18,6 +18,14 @@
 
                     <br>
 
+                    <h3>Uploads</h3>
+
+                    @foreach ($uploads as $upload)
+                        <img src="{{ $upload->url }}">
+                    @endforeach
+
+                    <br>
+
                     <a href="/uploadfile">Upload a file</a>
 
                 </div>

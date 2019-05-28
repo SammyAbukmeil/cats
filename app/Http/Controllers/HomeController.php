@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use GuzzleHttp\Exception\GuzzleException;
+use GuzzleHttp\Client;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        // Get uploads from API
+        $client = new Client();
+        $res = $client->request('GET', 'http://cats.localhost/api/uploads');
+        $uploads = $res->getBody()->getContents();
+
+        $uploads = json_decode($uploads);
+
+        return view('home', compact("uploads"));
     }
 }
