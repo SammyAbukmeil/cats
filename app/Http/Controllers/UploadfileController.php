@@ -17,8 +17,6 @@ class UploadfileController extends Controller
             'select_file' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048'
         ]);
 
-        die('test');
-
         $image = $request->file('select_file');
         $new_name = rand() . '.' . $image->getClientOriginalName();
         $image->move(public_path("images"), $new_name);

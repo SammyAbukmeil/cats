@@ -16,6 +16,8 @@
 
                     You are logged in!
 
+                    <br>
+
                     <a href="/uploadfile">Upload a file</a>
 
                 </div>
