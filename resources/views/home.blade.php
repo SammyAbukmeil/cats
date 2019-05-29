@@ -21,7 +21,9 @@
                     <h3>Uploads</h3>
 
                     @foreach ($uploads as $upload)
-                        <img src="{{ $upload->url }}">
+                        <div class="img-wrapper">
+                            <img src="{{ $upload->url }}">
+                        </div>
                     @endforeach
 
                     <br>

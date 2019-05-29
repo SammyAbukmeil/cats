@@ -6,3 +6,11 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.img-wrapper {
+    margin: 50px;
+
+    img {
+        width: 100%;
+    }
+}
