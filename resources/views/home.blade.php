@@ -8,27 +8,29 @@
                 <div class="card-header">Dashboard</div>
 
                 <div class="card-body">
-                    @if (session('status'))
+                    {{-- @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in! --}}
 
-                    <br>
+                    <div class="upload-link-wrapper btn btn-primary">
+                        <a class="upload-link" href="/uploadfile">Upload a cat! :)</a>
+                    </div>
 
-                    <h3>Uploads</h3>
+                    <div class="main-feed">
+                        <h3>Cat Wall</h3>
 
-                    @foreach ($uploads as $upload)
-                        <div class="img-wrapper">
-                            <img src="{{ $upload->url }}">
-                        </div>
-                    @endforeach
+                        <card card_text="Test"></card>
 
-                    <br>
-
-                    <a href="/uploadfile">Upload a file</a>
+                        @foreach ($uploads as $upload)
+                            <div class="img-wrapper">
+                                <img src="{{ $upload->url }}">
+                            </div>
+                        @endforeach
+                    </div>
 
                 </div>
             </div>

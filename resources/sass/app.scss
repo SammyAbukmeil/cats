@@ -1,16 +1,2 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
 
-// Variables
-@import 'variables';
-
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
-
-.img-wrapper {
-    margin: 50px;
-
-    img {
-        width: 100%;
-    }
-}
+@import '~vuetify/dist/vuetify.min.css';
