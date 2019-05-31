@@ -7,8 +7,13 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+.upload-link {
+    width: 100%;
+}
+
 .img-wrapper {
     margin: 50px;
+    border: 1px solid black;
 
     img {
         width: 100%;
