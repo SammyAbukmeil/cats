@@ -20,6 +20,8 @@
 
                     {{-- <h3>Uploads</h3> --}}
 
+                    Hpst on AWS https://medium.com/artisanhost/hosting-a-laravel-application-on-aws-lamdba-90b7133c8578
+
                     <div class="upload-link-wrapper">
                         <a class="upload-link btn btn-primary" href="/uploadfile">Upload a cat!</a>
                     </div>
