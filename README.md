@@ -1,15 +1,13 @@
-# Cats!
+### Features
 
-## Setup
+- Images are uploaded via a form, and are stored in the database
+- An API endpoint retrives all uploades from the database
+- The frontend calls the API, and displays all images
 
-composer update
 
-Copy .env.example to .env and fill in
+### Setup
 
-Run php artisan migrate
-
-php artisan key:generate
-
-### To do
-
-- 
+- `composer update`
+- `cp .env.example .env` and fill
+- `php artisan migrate`
+- `php artisan key:generate`
